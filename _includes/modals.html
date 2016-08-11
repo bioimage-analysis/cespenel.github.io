@@ -14,8 +14,21 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
+                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
+                            <img src="img/portfolio/{{ post.img2 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
+                            <img src="img/portfolio/{{ post.img3 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
+                            <div style="text1-align:center">
+                              <span class="btn btn-default btn-sm" onclick="currentSlide(1)"></span>
+                              <span class="btn btn-default btn-sm" onclick="currentSlide(2)"></span>
+                              <span class="btn btn-default btn-sm" onclick="currentSlide(3)"></span>
+                            </div>
+
+
+                            <a class="btn btn-default" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                            <a class="btn btn-default" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+                          </br>
+                            <h5>{{ post.description }}</h5>
+
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
@@ -38,3 +51,37 @@
         </div>
     </div>
 {% endfor %}
+
+
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showDivs(slideIndex = n);
+}
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var y = document.getElementsByClassName("item-details");
+  var dots = document.getElementsByClassName("btn btn-default btn-sm");
+  if (n > (x.length/y.length)) {slideIndex = 1}
+  if (n < 1) {slideIndex = (x.length/y.length)}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < (dots.length/y.length); i++) {
+      dots[i].className = dots[i].className.replace("btn btn-default btn-sm active", "btn btn-default btn-sm");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
