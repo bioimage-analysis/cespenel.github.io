@@ -1,11 +1,11 @@
 ---
-title: Treehouse
-subtitle: Website Design
+title: Cell & Tissue Segmentation
+#subtitle: Website Design
 layout: default
 modal-id: 4
-date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
+date: 2014-07-17
+img1: escape.png
+thumbnail: image_method1.jpeg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

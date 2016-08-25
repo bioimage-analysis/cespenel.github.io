@@ -1,11 +1,11 @@
 ---
-title: Round Icons
-subtitle: Graphic Design
+title: 3D rendering
+#subtitle: Website Design
 layout: default
-modal-id: 6
-date: 2014-07-15
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
+modal-id: 5
+date: 2014-07-16
+#img: golden.png
+thumbnail: Convallaria_3D.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

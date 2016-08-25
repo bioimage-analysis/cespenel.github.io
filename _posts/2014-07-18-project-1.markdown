@@ -4,14 +4,19 @@ title: Cell counting
 layout: default
 modal-id: 1
 date: 2014-07-18
-img1: Green.png
-img2: Red.png
-img3: Result_First_Tile.jpg
+img1_Title: Overlay Green and Red Channels
+img1: cell_count/Red_Green.png
+img2_Title: Green Channel with a red dot on cells counted
+img2: cell_count/Green.png
+img3_Title: Red Channel with a green dot on cells counted
+img3: cell_count/Red.png
+img4_Title: Ratio Green/Red overtime, Amount of cells overtime
+img4: cell_count/Result_First_Tile.jpg
 thumbnail: Counted_cell_Green.jpg
 alt: image-alt
 project-date: 2016
 client: Stanford
 category: Cell counting
-description: Counting cell growth over a 24hrs period in two different channels 
-
+description: Counting cell growth over a 24hrs period in two different channels
+link: https://github.com/cespenel/kevin/blob/master/Kevin_analysis.ipynb
 ---

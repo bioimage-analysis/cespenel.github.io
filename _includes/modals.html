@@ -14,20 +14,29 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
-                            <img src="img/portfolio/{{ post.img2 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
-                            <img src="img/portfolio/{{ post.img3 }}" class="img-responsive img-centered mySlides" alt="{{ post.alt }}">
+
+                            <h5>{{ post.img1_Title }}</h5>
+                            <img src="img/portfolio/{{ post.img1 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <h5>{{ post.img2_Title }}</h5>
+                            <img src="img/portfolio/{{ post.img2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <h5>{{ post.img3_Title }}</h5>
+                            <img src="img/portfolio/{{ post.img3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <h5>{{ post.img4_Title }}</h5>
+                            <img src="img/portfolio/{{ post.img4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                             <!-- Add to add it with "myslides" in the class of the image for a slider
                             <div style="text1-align:center">
                               <span class="btn btn-default btn-sm" onclick="currentSlide(1)"></span>
                               <span class="btn btn-default btn-sm" onclick="currentSlide(2)"></span>
                               <span class="btn btn-default btn-sm" onclick="currentSlide(3)"></span>
                             </div>
-
+                            Portfolio Modals
 
                             <a class="btn btn-default" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
                             <a class="btn btn-default" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+                              -->
                           </br>
-                            <h5>{{ post.description }}</h5>
+                          <strong><a target="_blank" href="{{ post.link}}">Link to the github repository</a>
+                          <hr class="star-primary">
 
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -53,7 +62,7 @@
 {% endfor %}
 
 
-
+<!--
 <script>
 
 var slideIndex = 1;
@@ -73,6 +82,9 @@ function showDivs(n) {
   var x = document.getElementsByClassName("mySlides");
   var y = document.getElementsByClassName("item-details");
   var dots = document.getElementsByClassName("btn btn-default btn-sm");
+
+  document.write(x.length);
+
   if (n > (x.length/y.length)) {slideIndex = 1}
   if (n < 1) {slideIndex = (x.length/y.length)}
   for (i = 0; i < x.length; i++) {
@@ -85,3 +97,4 @@ function showDivs(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+-->
