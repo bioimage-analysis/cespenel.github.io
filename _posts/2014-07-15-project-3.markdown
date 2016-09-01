@@ -12,7 +12,7 @@ date: 2014-07-18
 #img3: Tracking/Track_3D.png
 #img4_Title: Calculated Mean Square Displacement for the different cells
 #img4: Tracking/MSD.png
-thumbnail: heatmap.png
+thumbnail: Tracking/Track_3D
 alt: image-alt
 project-date: 2016
 client: Stanford
