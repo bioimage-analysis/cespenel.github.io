@@ -4,14 +4,6 @@ title: High Content Throughput
 layout: default
 modal-id: 3
 date: 2014-07-18
-#img1_Title: Movie with objects to track
-#img1: Tracking/swimmingalgae.gif
-#img2_Title: Different track in a 2d representation
-#img2: Tracking/Track_2D.png
-#img3_Title: Different track with a 3D representation
-#img3: Tracking/Track_3D.png
-#img4_Title: Calculated Mean Square Displacement for the different cells
-#img4: Tracking/MSD.png
 thumbnail: highContent/Track_3D.png
 alt: image-alt
 project-date: 2016
