@@ -4,7 +4,7 @@ title: High Content Throughput
 layout: default
 modal-id: 3
 date: 2014-07-18
-thumbnail: highContent/Track_3D.png
+thumbnail: highContent/Heatmap.png
 alt: image-alt
 project-date: 2016
 client: Stanford
