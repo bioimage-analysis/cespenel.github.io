@@ -1,5 +1,5 @@
 ---
-title: High Content Throughput
+title: High-throughput screening
 #subtitle: Website Design
 layout: default
 modal-id: 3
