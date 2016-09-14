@@ -18,5 +18,4 @@ project-date: 2016
 client: Stanford
 category: Cell counting
 description: Counting cell growth over a 24hrs period in two different channels
-link: https://github.com/cespenel/kevin/blob/master/Kevin_analysis.ipynb
 ---

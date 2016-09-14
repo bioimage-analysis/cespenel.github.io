@@ -18,6 +18,4 @@ project-date: 2016
 client: Stanford
 category: Cell Tracking
 description: Example tracked cells and data extracted
-link: https://github.com/cespenel/image_processing/blob/master/HOW%20TO%20USE%20%22ImageAlignment%22.ipynb
-
 ---
