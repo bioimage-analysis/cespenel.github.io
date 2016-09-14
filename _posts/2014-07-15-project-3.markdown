@@ -1,15 +1,22 @@
 ---
-title: High-throughput screening
+title: High-Content screening
 #subtitle: Website Design
 layout: default
 modal-id: 3
 date: 2014-07-18
+img1_Title: Widget to explore the different images in each well
+img1: highContent/exploration.png
+img2_Title: Segmentation of the nucleus
+img2: highContent/segmentation.png
+img3_Title: Statistic on every well
+img3: highContent/statistic.png
+img4_Title: Heatmap representing the average number of cells per well
+img4: highContent/Heatmap.png
 thumbnail: highContent/Heatmap.png
 alt: image-alt
 project-date: 2016
 client: Stanford
-category: Cell Tracking
-description: Example tracked cells and data extracted
-#link: https://github.com/cespenel/image_processing/blob/master/HOW%20TO%20USE%20%22ImageAlignment%22.ipynb
+category: High-Content
+description: Example high content analysis of data
 
 ---
