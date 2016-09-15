@@ -18,4 +18,5 @@ project-date: 2016
 client: Stanford
 category: Cell Tracking
 description: Example tracked cells and data extracted
+link: https://github.com/cespenel/cell_tracking/blob/master/Cell_Tracking.ipynb
 ---
