@@ -253,6 +253,14 @@ fieldset[disabled] .btn-xl.active {
         transition: all .3s;
     }
 
+    .navbar-default .navbar-brand2 {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
