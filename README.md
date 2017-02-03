@@ -1,1 +1,1 @@
-## Stanford Bioimage anslysis website
+## Stanford Bioimage analysis website
