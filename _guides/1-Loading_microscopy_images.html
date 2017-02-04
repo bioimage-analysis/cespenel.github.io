@@ -1,7 +1,5 @@
 ---
-title: Loading microscopy images in Python
-modal-id: 3
-thumbnail: Tracking/Track_3D.png
+title : Loading microscopy images in Python
 ---
 
 <!DOCTYPE html>
@@ -11749,7 +11747,6 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
-
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
@@ -11757,13 +11754,8 @@ div#notebook {
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
-
 <div class="text_cell_render border-box-sizing rendered_html">
-
-<h1 id="Python-and-scikit-image-for-bioimage-analysis">Python and scikit-image for bioimage analysis<a class="anchor-link" href="#Python-and-scikit-image-for-bioimage-analysis">&#182;</a></h1><p>Here is a short introduction on how to work with microscopy images with python.
-First, especially if you are a biologist (which I am!), you might wonder why using
-Python, over, let say ImageJ/Fiji, which is the most commonly use software for image-analysis
-among biologist. (??)</p>
+<h1 id="Python-and-scikit-image-for-bioimage-analysis">Python and scikit-image for bioimage analysis<a class="anchor-link" href="#Python-and-scikit-image-for-bioimage-analysis">&#182;</a></h1><p>Here is a short introduction on how to work with microscopy images with python.</p>
 <h2 id="Loading-microscopy-images">Loading microscopy images<a class="anchor-link" href="#Loading-microscopy-images">&#182;</a></h2><p>Images are manipulated as numerical arrays and in <code>Python</code>, the N-dimensional array object is provided by <code>Numpy</code>.  The goal here is then to be able to generate <code>Numpy</code> arrays from your bioimages. The main problem is that every company has their own proprietary file format (Nikon has .nd2, Zeiss has .czi, etc.) and so you need to be able to parse and interpret the file to extract the arrays and the metadata. For that purpose, the mains available software is <code>Bio-Formats</code> which is developed by the Open Microscopy Environment (<strong>OME</strong>) consortium.</p>
 <h3 id="Installation-of-the-Bio-Formats-command-line-tools">Installation of the Bio-Formats command line tools<a class="anchor-link" href="#Installation-of-the-Bio-Formats-command-line-tools">&#182;</a></h3><p>(Mac based systems)</p>
 <p>Download the <a href="http://downloads.openmicroscopy.org/latest/bio-formats/artifacts/bftools.zip">bftools.zip</a> from the <a href="http://www.openmicroscopy.org/site/support/bio-formats5.3/users/comlinetools/">Open Microscopy website</a>, unzip it into a new folder (use a memorable name for example bioformat).</p>
@@ -16827,10 +16819,8 @@ b&#39;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;\n&lt;OME xmln
 </div>
 </div>
 
-</div>
-<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+</div><FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
     </div>
   </div>
-
 </body>
 </html>
