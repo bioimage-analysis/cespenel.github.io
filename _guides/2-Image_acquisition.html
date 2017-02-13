@@ -1,11 +1,11 @@
 ---
-title : Introduction to sample preparation
+title : Basic concepts you should know before starting your acquisition
 ---
 
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Introduction_to_sample_preparation</title>
+<title>Image_acquisition</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11755,63 +11755,134 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM><h1 id="Introduction-to-sample-preparation">Introduction to sample preparation<a class="anchor-link" href="#Introduction-to-sample-preparation">&#182;</a></h1><p>The microscope is not magical, without a good sample, you won't have images
- that are suitable for image analysis. Here, I just want to highlight some
-important points that have to be taken into account when you prepare your sample.</p>
-<hr>
-<h2 id="1.-Choice-of-the-coverslip">1. Choice of the coverslip<a class="anchor-link" href="#1.-Choice-of-the-coverslip">&#182;</a></h2><p>In general, you should always use #1.5 coverslip (0.17mm thickness) as most
-microscope objectives are designed to work optimally with these. This is true
-for fixed samples as well as live samples. For live cell imaging, <a href="http://ibidi.com/applications/live-cell-imaging/">Ibidi</a>
- as a very good choice of dishes and chambers.</p>
-<hr>
-<h2 id="2.-Choice-of-your-fluorophore(s)">2. Choice of your fluorophore(s)<a class="anchor-link" href="#2.-Choice-of-your-fluorophore(s)">&#182;</a></h2><ul>
-<li><p>First, make you have the right laser lines and/or excitation-emission filters available, either in your lab or in the facilities around you.</p>
-</li>
-<li><p>Second, especially if you are working with living sample, try to work with fluorophores with a peak in excitation that is toward the longer wavelengths. Shorter wavelengths, such as UV, have a stronger energy and will damage your sample faster.</p>
-</li>
-<li><p>Third, obviously, you want a bright fluorophore (high quantum yield) with a long lifetime. To choose from the myriad of fluorophore, I will recommend to use the <a href="http://www.fpvis.org/">fluorescent protein visualization</a> tool develop by Talley Lambert and Kurt Thorn.</p>
-</li>
-<li><p>Finally, avoid as much as possible any cross talk between your fluorophores, to check for that, you can use the <a href="https://www.thermofisher.com/us/en/home/life-science/cell-analysis/labeling-chemistry/fluorescence-spectraviewer.html">Fluorescence SpectraViewer</a> from Thermo Fisher Scientific.</p>
-</li>
-</ul>
-<hr>
-<h2 id="3.-Fixation-and-permeabilization">3. Fixation and permeabilization<a class="anchor-link" href="#3.-Fixation-and-permeabilization">&#182;</a></h2><p>Fixing and permeabilizing your cells affects the cell morphology and the availability of the antigen you are trying to detect. You may get different results with different reagents, times and concentrations hence the need for protocol optimization. The distortion of the cell morphology is something to bear in mind when interpreting the images.</p>
-<h3 id="Fixation">Fixation<a class="anchor-link" href="#Fixation">&#182;</a></h3><p><strong>Formaldehyde/paraformaldehyde:</strong><br>
-Aldehyde fixatives cross-link proteins and generally preserve well the cell morphology. They are somewhat slower acting than organic solvents, especially for thick specimens. 4% formaldehyde for 10 min is a good starting point for mammalian cells.</p>
-<p>(<strong>Glutaraldehyde</strong> preserves the cellular structure very well but causes strong autofluorescence and so is used mainly for EM.)</p>
-<p><strong>Methanol</strong><br>
-Organic solvents like methanol precipitate proteins, which produces a similar outcome to crosslinking with aldehydes - the protein "shell" of the cell is maintained, but all the small molecules within will be lost during the rest of the protocol. Fixation with methanol denatures proteins, so never use if you have a fluorescent protein that you want to look at in your sample.
-Some antigenic epitopes are in fact completely destroyed by methanol. However, it might also be advantageous for some other antibodies (especially some monoclonal antibodies which bind only one epitope) that the naturally buried antigens could be exposed after methanol fixation.
-Methanol/Acetone Using a combination of methanol and acetone can improve immunolabelling lost in 100% methanol fixation (methanol is best for structure such as microtubules, acetone permeabilize well and is less damaging). Try few min in solvent at -20°C as a starting point.</p>
-<h3 id="Permeabilization">Permeabilization<a class="anchor-link" href="#Permeabilization">&#182;</a></h3><p>Permeabilization helps get the antibodies into your now-fixed cells. A range of different detergents can be used, including NP-40, Triton X-100, Tween-20 and Saponin. Other solvents (eg ethanol or DMSO) can also be used to remove lipid. The fixation step actually permeabilizes the cells to some degree (ie they remove some of the membranes), so these steps aren't really completely distinct (eg Acetone permeabilizes as well as fixes).</p>
-<p>The extent of permeabilization required depends on what you are trying to look at. For example, cell surface proteins don't require much/any permeabilization, indeed, if you remove all the membrane you will lose your protein. Labeling before permeabilization can also help distinguish extracellular subjects (eg cell surface-bound bacteria) and that within the cells (which only stains after permeabilization).</p>
-<blockquote><p>Your staining will be improved by blocking the non-specific binding of your antibody to your specimen. BSA, milk or serum can be used for this. Don't use serum from the same species as the one in which the primary antibody was raised! &lt;/br&gt;
-If you use a secondary antibody developed from goat, a typical blocking solution is 5% normal goat serum made in PBS (some people also add 0.05% Tween-20 to the solution). NaN3 can be added to 0.05% (w/v) to the solution. Blocking can last from 10 minutes to 30 minutes.</p>
-</blockquote>
-<hr>
-<h2 id="4.-Mounting-and-Recording-medium">4. Mounting and Recording medium<a class="anchor-link" href="#4.-Mounting-and-Recording-medium">&#182;</a></h2><h3 id="Mounting-medium">Mounting medium<a class="anchor-link" href="#Mounting-medium">&#182;</a></h3><p>Mounting medium helps preserve your sample and raises the refractive index to give good performance with oil objectives. Mountants often have scavengers which soak-up free radicals and reduce photobleaching (these sometimes reduce the initial brightness of your samples).</p>
-<p>A glycerol-PBS mixture is suitable for most fixed immunofluorescence and GFP-labeled samples, using from 50-90% glycerol, 1x final PBS, and pH 8-9.
-An antifading additive is highly recommended. Time and the act of observation both accelerate the loss of fluorescence from any sample. This inevitable process can be slowed by adding various reagents, chiefly antioxidants and radical scavengers, to the mounting medium.</p>
-<p>Commercial products are available, such as (in no particular order):</p>
-<ul>
-<li>Fluoromount-G (Electron Microscopy Sciences): phosphate buffered glycerol + 10% polyvinyl alcohol + 0.1% sodium azide.</li>
-<li>Aqua/Poly-Mount (Polysciences)</li>
-<li>ProLong, SlowFade, SlowFade Light (Molecular Probes):</li>
-<li>Vectashield (Vector Laboratories)</li>
-<li>Immumount (Shandon)</li>
-</ul>
-<h3 id="Recording-medium">Recording medium<a class="anchor-link" href="#Recording-medium">&#182;</a></h3><p>I will not go too much into details here as it really depend on your cells.</p>
-<ul>
-<li>Avoid imaging with red-phenol as it will add a great amount of background.</li>
-<li>If you are having trouble problems with cell death or damage during fluorescence imaging, several commercial products are available to minimize phototoxicity:  <ul>
-<li><a href="http://evrogen.com/products/medium_DMEM_gfp/medium_DMEM_gfp.shtml">Evrogen</a></li>
-<li><a href="http://www.thermofisher.com/us/en/home/life-science/cell-culture/mammalian-cell-culture/classical-media/fluorobrite-media.html">Thermofisher</a></li>
-<li><a href="http://www.cellgs.com/Shop/Cell-Culture-Systems/LiveLight.html">Cell guidance systems</a></li>
-</ul>
-</li>
-</ul>
+<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Image-acquisition---some-basic-concepts:">Image acquisition - some basic concepts:<a class="anchor-link" href="#Image-acquisition---some-basic-concepts:">&#182;</a></h1><p>Here are few basic concepts you should know before starting your acquisition:</p>
 
-<h3 id="Clearing-methods">Clearing methods<a class="anchor-link" href="#Clearing-methods">&#182;</a></h3><p>For thick, fixed speciemens, you might want to consider using clearing methods which will redure the light scattering and the opaqueness of your sample. You will find a nice table of different methods available in this Nature Methods blog post"<a href="http://blogs.nature.com/methagora/2016/02/methods-and-probes-for-cleared-tissue-an-imperfect-table.html">Methods and probes for cleared tissue: an imperfect table</a>":</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Objective-lens">Objective lens<a class="anchor-link" href="#Objective-lens">&#182;</a></h2><p>The objective lens is one of the most important piece of equipment of your microscope, it will determine the size of your <strong>field of view</strong>, your <strong>resolution</strong>, your <strong>sampling</strong> and depending of the quality of your objective, it will help with some <strong>optical correction</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here I highlighted the key parameters that you can see on the markings on the barrel of an objective lens:</p>
+<p><img src="/img/guides/obj.png" style="width:350px"  /></p>
+<h3 id="Numerical-aperture:">Numerical aperture:<a class="anchor-link" href="#Numerical-aperture:">&#182;</a></h3><p>It is the angular aperture of your objective NA given as:</p>
+<p>${\large NA = n \sin\theta} $</p>
+<p>Where $\theta$ is the half angle of the cone of specimen light accepted by the objective lens and <em>n</em> is the refractive index of the medium between the lens and the specimen.</p>
+<p>The <strong>higher the NA</strong> the more diffracted rays are collected from the specimen and then the <strong>higher the spatial resolution</strong> you could expect.</p>
+<h3 id="Magnification:">Magnification:<a class="anchor-link" href="#Magnification:">&#182;</a></h3><p>An higher magnification will not give you a higher resolution, however, the magnification is critical for <strong>sampling</strong> (see bellow) while working with a camera.
+Moreover, the ratio of numerical aperture to magnification determines the light-gathering power of a lens and hence the <strong>image brightness</strong> B:</p>
+<p>${\large B \propto \frac{NA^4}{M^2}} $ (epi-illumination mode)</p>
+<p>Where M is the magnification and NA the numerical aperture.</p>
+<p>Finally you should keep in mind that an higher magnification will give you a smaller <strong>field of view</strong>.</p>
+<h3 id="Immersion-medium:">Immersion medium:<a class="anchor-link" href="#Immersion-medium:">&#182;</a></h3><p>As we have seen before, in the equation $NA = n \sin\theta$ the NA is directly proportional to <em>n</em> then, the higher the refractive index of the immersion medium, the higher the resolution you could have. However, you should also take into account the <em>n</em> of your specimen and try to match it as much as possible with the <em>n</em> of the objective lens to avoid too much diffraction of the light. For example, if you use ProLong® Gold Antifade Mountant which as a refractive index of 1.47, an oil ($n=1.52$) objective will be great or, if you have the option, a glycerol ($n=1.47$) objective would be perfect.</p>
+<h3 id="Optical-correction:">Optical correction:<a class="anchor-link" href="#Optical-correction:">&#182;</a></h3><p>This is more or less an indication of the quality (and the price) of your objective. It is indicative of the amount of colors that are corrected for spherical and chromatic aberration as well as if the objective provide flat-field correction, here is table that summarize the different optical correction available:</p>
+<table>
+<thead><tr>
+<th>Objective Type</th>
+<th>Spherical Aberration</th>
+<th>Chromatic Aberration</th>
+<th>Field Curvature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Achromat</td>
+<td>1 Color</td>
+<td>2 Colors</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Plan Achromat</td>
+<td>1 Color</td>
+<td>2 Colors</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Fluorite</td>
+<td>2-3 Colors</td>
+<td>2-3 Colors</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Plan Fluorite</td>
+<td>3-4 Colors</td>
+<td>2-4 Colors</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Plan Apochromat</td>
+<td>3-4 Colors</td>
+<td>4-5 Colors</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<blockquote><h4 id="Even-the-best-objective-will-not-give-you-a-good-image-if-it-is-dirty,-YOU-SHOULD-ALWAYS-START-YOUR-EXPERIMENT-BY-CLEANING-YOUR-OBJECTIVE-as-well-as-the-support-of-your-specimen.">Even the best objective will not give you a good image if it is dirty, YOU SHOULD ALWAYS START YOUR EXPERIMENT BY CLEANING YOUR OBJECTIVE as well as the support of your specimen.<a class="anchor-link" href="#Even-the-best-objective-will-not-give-you-a-good-image-if-it-is-dirty,-YOU-SHOULD-ALWAYS-START-YOUR-EXPERIMENT-BY-CLEANING-YOUR-OBJECTIVE-as-well-as-the-support-of-your-specimen.">&#182;</a></h4>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h2 id="Spatial-resolution-and-sampling">Spatial resolution and sampling<a class="anchor-link" href="#Spatial-resolution-and-sampling">&#182;</a></h2><h3 id="Spatial-resolution">Spatial resolution<a class="anchor-link" href="#Spatial-resolution">&#182;</a></h3><p>The <em>spatial resolution</em> of the microscope is defined by the smallest resolvable distance between two points in an image.</p>
+<h4 id="XY-resolution"><em>XY</em> resolution<a class="anchor-link" href="#XY-resolution">&#182;</a></h4><p>$ {\large d_{x,y} =  \frac{0.61\lambda}{NA}}$
+Which define the <em>Rayleigh criterion</em> where <em>d</em> is the minimum resolved distance (in other words, your <em>XY</em> resolution), and NA is the numerical aperture of the objective lens. It's also the radius of the central diffraction disk also known at the <strong><em>Airy disk</em></strong>.</p>
+<h4 id="Z-resolution"><em>Z</em> resolution<a class="anchor-link" href="#Z-resolution">&#182;</a></h4><p>$ {\large d_{z} =  \frac{2\lambda n}{NA^2}}$
+Where n is refractive index of the immersion medium.</p>
+<h3 id="Sampling">Sampling<a class="anchor-link" href="#Sampling">&#182;</a></h3><p>According to the <strong>Nyquist sampling theorem</strong>, to preserve the spatial resolution, the radius of the <em>Airy disk</em> ($d$) should be covered by a minimum of 2 adjacent pixels.<br>
+Concretely, what does that mean? Let's assume that you are working with an objective with $M = 60X$, $NA = 1.4$ and with a $\lambda = 500nm$ the <em>resolvable power</em> of you objective is:<br>
+$d_{x,y}= \frac{0.61x500}{1.4}\approx 218nm$ <br>
+If you are working with a sCMOS camera, which typically have a $ 6.5 \mu m$ physical pixel size, after magnification, your pixel size is:<br>
+$pixel_{xy}= \frac{6.5}{60}\approx 108nm$, which will then give you a good sampling.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Dynamic-Range">Dynamic Range<a class="anchor-link" href="#Dynamic-Range">&#182;</a></h2><p>The number of resolvable steps of light intensity, gray-level steps ranging from black to white, is called the dynamic range.</p>
+<p>Ideally, especially if you plan in doing any image quantitation/measurements, <strong>the larger the number of gray levels the more accurate your measurement would be</strong> and also the easier the extraction of information will be.</p>
+<blockquote><p>Most of the computer monitors have only 8 bit processing, so you won't be able to see the difference between an 8 bit or a 16 bit image on your screen.</p>
+</blockquote>
+<h3 id="Bit-depth">Bit depth<a class="anchor-link" href="#Bit-depth">&#182;</a></h3><p>After digitization (by an analogue to digital converter(ADC)) in the computer, the photon signal is displayed as shades of gray ranging from black (no signal) to white (saturating signal) on the monitor. The ADC are described in terms of their bit depth. Since a computer bit can only be in one of two possible stated (0 or 1), the bit depth is described as $2^X$ number of steps. Therefore, an 8 bit processor can encode $2^8$ steps or 256 gray levels and a 16 bit processor can encode $2^16$ steps or 65536 gray levels.</p>
+<blockquote><p>The higher the bit depth, the larger your image would be, an "8 bit pixel", will take 1 byte (1 byte is 8 binary digits) on the disk while a "16 bit pixel" will take 2 bytes.</p>
+</blockquote>
+<h3 id="Laser-power">Laser power<a class="anchor-link" href="#Laser-power">&#182;</a></h3><p>Here the advice is relatively simple: <strong>"Use the lowest laser power to give an acceptable image"</strong>. This is true especially if you are working with live cells, too much laser power will be phototoxic to your cells and will alter their behavior. Moreover, using low laser power will prevent photobleaching of your fluorophores.<br>
+<strong>What is an acceptable image?</strong> It's an image you can use for quantification. One advice would be to test your images on your analysis pipeline to make sure the signal to noise is good enough to minimize as much as possible any post-processing.</p>
+<h3 id="Gain">Gain<a class="anchor-link" href="#Gain">&#182;</a></h3><p>Gain is a relative measure of the amplification one applies to the photon detection system. On a PMT (confocal) the signal voltage is amplified by multiplication by a constant factor, while on a camera, increasing the electronic gain reduces the number of photoelectrons that are assigned per gray level.
+Increasing the gain will then result in brighter images, however, <strong>Gain does not make your camera more sensitive</strong>. It boosts the noise as well as the signal and at some point as the gain is increased (and the overall image gets brighter), the signal/noise ratio (S/N) starts to decrease. The overall aim is to get the highest S/N, NOT the brightest image.</p>
+<h3 id="Offset">Offset<a class="anchor-link" href="#Offset">&#182;</a></h3><p>Offset is an electron adjustment that shift positively or negatively the signal. The offset has to be adjusted to prevent the ADC to hit 0.</p>
+<blockquote><p>Caution: by decreasing the offset too far, very faint data will actually be lost - it is critical that this is not allowed to happen. New users are often tempted to decrease the offset value to try to eliminate background or non-specific signal. This should <strong>NEVER</strong> be done.</p>
+</blockquote>
 
 </div>
 </div>

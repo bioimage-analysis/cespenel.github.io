@@ -1,6 +1,3 @@
----
-title : Introduction to sample preparation
----
 
 <!DOCTYPE html>
 <html>
@@ -11756,8 +11753,8 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM><h1 id="Introduction-to-sample-preparation">Introduction to sample preparation<a class="anchor-link" href="#Introduction-to-sample-preparation">&#182;</a></h1><p>The microscope is not magical, without a good sample, you won't have images
- that are suitable for image analysis. Here, I just want to highlight some
-important points that have to be taken into account when you prepare your sample.</p>
+ that are suitable for image analysis, but a good design of your experiment could save you a lot of time and money. Here, I just want to highlight some
+important point that have to be taken into account when you prepare your sample.</p>
 <hr>
 <h2 id="1.-Choice-of-the-coverslip">1. Choice of the coverslip<a class="anchor-link" href="#1.-Choice-of-the-coverslip">&#182;</a></h2><p>In general, you should always use #1.5 coverslip (0.17mm thickness) as most
 microscope objectives are designed to work optimally with these. This is true
@@ -11765,7 +11762,7 @@ for fixed samples as well as live samples. For live cell imaging, <a href="http:
  as a very good choice of dishes and chambers.</p>
 <hr>
 <h2 id="2.-Choice-of-your-fluorophore(s)">2. Choice of your fluorophore(s)<a class="anchor-link" href="#2.-Choice-of-your-fluorophore(s)">&#182;</a></h2><ul>
-<li><p>First, make you have the right laser lines and/or excitation-emission filters available, either in your lab or in the facilities around you.</p>
+<li><p>First, make you have the right laser lines and/or excitation-emission filters available to match the fluorophores you choosed, either in your lab or in the facilities around you.</p>
 </li>
 <li><p>Second, especially if you are working with living sample, try to work with fluorophores with a peak in excitation that is toward the longer wavelengths. Shorter wavelengths, such as UV, have a stronger energy and will damage your sample faster.</p>
 </li>
@@ -11775,7 +11772,7 @@ for fixed samples as well as live samples. For live cell imaging, <a href="http:
 </li>
 </ul>
 <hr>
-<h2 id="3.-Fixation-and-permeabilization">3. Fixation and permeabilization<a class="anchor-link" href="#3.-Fixation-and-permeabilization">&#182;</a></h2><p>Fixing and permeabilizing your cells affects the cell morphology and the availability of the antigen you are trying to detect. You may get different results with different reagents, times and concentrations hence the need for protocol optimization. The distortion of the cell morphology is something to bear in mind when interpreting the images.</p>
+<h2 id="3.-Fixation-and-permeabilization">3. Fixation and permeabilization<a class="anchor-link" href="#3.-Fixation-and-permeabilization">&#182;</a></h2><p>Fixing and permeabilizing your cells affects the cell morphology, the protein localization and the availability of the antigen you are trying to detect. You may get different results with different reagents, times and concentrations hence the need for protocol optimization. The distortion of the cell morphology is something to bear in mind when interpreting the images.</p>
 <h3 id="Fixation">Fixation<a class="anchor-link" href="#Fixation">&#182;</a></h3><p><strong>Formaldehyde/paraformaldehyde:</strong><br>
 Aldehyde fixatives cross-link proteins and generally preserve well the cell morphology. They are somewhat slower acting than organic solvents, especially for thick specimens. 4% formaldehyde for 10 min is a good starting point for mammalian cells.</p>
 <p>(<strong>Glutaraldehyde</strong> preserves the cellular structure very well but causes strong autofluorescence and so is used mainly for EM.)</p>
@@ -11810,9 +11807,96 @@ An antifading additive is highly recommended. Time and the act of observation bo
 </ul>
 </li>
 </ul>
+<h3 id="Clearing-methods">Clearing methods<a class="anchor-link" href="#Clearing-methods">&#182;</a></h3><p>For thick, fixed speciemens, you might want to consider using clearing methods which will redure the light scattering and the opaqueness of your sample. Here is a table that I reproduce from the Nature Methods blog post"<a href="http://blogs.nature.com/methagora/2016/02/methods-and-probes-for-cleared-tissue-an-imperfect-table.html">Methods and probes for cleared tissue: an imperfect table</a>":</p>
 
-<h3 id="Clearing-methods">Clearing methods<a class="anchor-link" href="#Clearing-methods">&#182;</a></h3><p>For thick, fixed speciemens, you might want to consider using clearing methods which will redure the light scattering and the opaqueness of your sample. You will find a nice table of different methods available in this Nature Methods blog post"<a href="http://blogs.nature.com/methagora/2016/02/methods-and-probes-for-cleared-tissue-an-imperfect-table.html">Methods and probes for cleared tissue: an imperfect table</a>":</p>
-
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><table style="height: 600px;width: 100%" border="1" cellpadding="2"></p>
+<p><caption><strong>An imperfect table about some labels that have been used in cleared tissue</strong></caption></p>
+<p><tbody></p>
+<p><tr bgcolor="#E6E6FA"></p>
+<p><th style="width: 20%"><strong>Probe</strong></th></p>
+<p><th style="width: 40%"><strong>Labeling shown in large samples</strong><sup>b</sup></th></p>
+<p><th style="width: 30%"><strong>Labeling shown in small samples</strong></th></p>
+<p><th style="width: 10%">Does not work well?</th>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td><strong>Genetically encoded fluorescent proteins</strong></td></p>
+<p><td><span style="color: #99cc00">3DISCO</span> (signal quenched after a few days), <span style="color: #800080">CLARITY</span>, <span style="color: #3366ff">CUBIC</span>, <span style="color: #800080">ExM</span> (variant)<sup>a</sup>, <span style="color: #800080">PACT/PARS</span> (signal retained 6 months and longer)<sup>a</sup>, <span style="color: #99cc00">sDISCO</span><sup>a</sup></td></p>
+<p><td><span style="color: #99cc00">BABB</span> (signal quenched after a few hours), <span style="color: #ff6600">ClearT2</span>, <span style="color: #800080">ExM</span> (variant)<sup>a</sup> , <span style="color: #800080">ExM/ePACT</span><sup>a</sup> , <span style="color: #3366ff">Sca<em>l</em>eA2</span>, <span style="color: #3366ff">Sca<em>l</em>eS</span>, <span style="color: #ff6600">SeeDB</span>,<br />
+<span style="color: #ff6600">Sucrose</span>, <span style="color: #ff6600">TDE</span></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td><strong>Immunolabels</strong></td></p>
+<p><td><span style="color: #99cc00">3DISCO</span>, <span style="color: #800080">CLARITY</span>, <span style="color: #99cc00">iDISCO</span>, <span style="color: #99cc00">iDISCO+</span><sup>a</sup>, <span style="color: #ff6600">iSeeDB</span>, <span style="color: #800080">PACT/PARS</span>, <span style="color: #ff6600">Sucrose</span>, <span style="color: #800080">SWITCH</span></td></p>
+<p><td><span style="color: #99cc00">BABB</span>, <span style="color: #ff6600">ClearT</span>, <span style="color: #ff6600">ClearT2</span>, <span style="color: #3366ff">CUBIC</span>, <span style="color: #ff6600">SeeDB</span>, <span style="color: #ff6600">SeeDB2</span><sup>a</sup> (in press) <span style="color: #ff6600">Sucrose</span>, <span style="color: #ff6600">TDE</span>, <span style="color: #800080">ExM</span></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td><strong>Specific nucleic acid detection</strong></td></p>
+<p><td><span style="color: #800080">EDC-CLARITY</span></td></p>
+<p><td><span style="color: #800080">CLARITY</span>, <span style="color: #800080">ExM</span> (variant)<sup>a</sup>, <span style="color: #800080">PACT/PARS</span></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td><strong>Dyes and stains</strong></td></p>
+<p><td></td></p>
+<p><td></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td>Congo Red</td></p>
+<p><td><span style="color: #99cc00">3DISCO</span></td></p>
+<p><td></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td>Lipophilic dyes such as DiI, Sudan Black</td></p>
+<p><td><span style="color: #800080">PACT/PARS</span> (Sudan Black), <span style="color: #800080">SWITCH</span> (DiI)</td></p>
+<p><td><span style="color: #ff6600">ClearT</span>, <span style="color: #3366ff">Sca<em>l</em>eS</span>, <span style="color: #ff6600">SeeDB</span></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td>Nuclear stains such as DAPI, DRAQ5, SYTO and PI</td></p>
+<p><td><span style="color: #3366ff">CUBIC</span>, <span style="color: #800080">ExM</span> (variant)<sup>a</sup>,<span style="color: #800080"> PACT/PARS</span>, <span style="color: #800080">SWITCH</span></td></p>
+<p><td><span style="color: #ff6600">SeeDB</span>, <span style="color: #ff6600">SeeDB2</span><sup>a</sup></td></p>
+<p><td></td>
+&lt;/tr&gt;</p>
+<p><tr></p>
+<p><td>SNAP-tags with SiR probes</td></p>
+<p><td><span style="color: #800080">PACT/PARS</span>, <span style="color: #99cc00">BABB</span>, <span style="color: #3366ff">Sca<em>l</em>e</span></td></p>
+<p><td><span style="color: #ff6600">SeeDB</span></td></p>
+<p><td></td>
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</p>
+<p>Clearing method: <span style="color: #99cc00"><strong>Solvent-based</strong></span>;<span style="color: #ff6600"><strong> simple immersion</strong></span>;<span style="color: #3366ff"><strong> hyperhydration</strong></span>;<strong><span style="color: #800080"> hydrogel-based</span>.</strong></p>
+<p><sup>a</sup>Unpublished information</p>
+<p><sup>b</sup>Indicates larger samples such as whole organs</p>
+<p>Sources: E. Boyden, MIT; K. Chung, MIT, K. Deisseroth, Stanford University; H-U. Dodt, Vienna University of Technology/Medical University of Vienna; V. Gradinaru, Caltech; P. Heppenstall, EMBL; Takeshi Imai, RIKEN; ­­K. Johnsson, EPFL; J. Lichtman, D. Richardson, Harvard University; A. Miyawaki, RIKEN; M. Tessier-Lavigne, N. Renier, Rockefeller University.</p>
+<p>*</p>
+<p><strong>Glossary of some tissue clearing agent acronyms</strong></p>
+<p>3DISCO :  Three-dimensional imaging of solvent-cleared organs</p>
+<p>sDISCO: Stabilized three-dimensional imaging of solvent-cleared organs</p>
+<p>BABB :  Benzyl alcohol and benzyl-benzoate</p>
+<p>CLARITY : Clear Lipid-exchanged Acrylamide-hybridized Rigid Imaging/Immunostaining/In situ hybridization-compatible Tissue-hYdrogel</p>
+<p>CUBIC : Clear unobstructed brain imaging cocktails and computational analysis</p>
+<p>EDC-CLARITY : 1-Ethyl-3-3-dimethyl-aminopropyl carbodiimide-CLARITY</p>
+<p>ePACT: PACT-based expansion clearing.</p>
+<p>iDISCO : Immunolabeling-enabled 3D imaging of solvent-cleared organs</p>
+<p>iDISCO+ : Immunolabeling-enabled 3D imaging of solvent-cleared organs plus</p>
+<p>PACT :  Passive Clear Lipid-exchanged Acrylamide-hybridized Rigid Imaging/Immunostaining/In situ hybridization-compatible Tissue-hYdrogel</p>
+<p>PARS : <em>P</em>erfusion-assisted <em>a</em>gent <em>r</em>elease in <em>s</em>itu</p>
+<p>SeeDB : See Deep Brain</p>
+<p>Spalteholz’s preparation :  Benzylbanzoate/methylsalicate</p>
+<p>TDE  : 2,2′-thiodiethanol</p>
 </div>
 </div>
 </div>

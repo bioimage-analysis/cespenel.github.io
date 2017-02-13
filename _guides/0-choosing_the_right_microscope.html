@@ -1,11 +1,11 @@
 ---
-title : Introduction to sample preparation
+title : Choosing the right microscope for your application
 ---
 
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Introduction_to_sample_preparation</title>
+<title>choosing_the_right_microscope</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11755,63 +11755,130 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM><h1 id="Introduction-to-sample-preparation">Introduction to sample preparation<a class="anchor-link" href="#Introduction-to-sample-preparation">&#182;</a></h1><p>The microscope is not magical, without a good sample, you won't have images
- that are suitable for image analysis. Here, I just want to highlight some
-important points that have to be taken into account when you prepare your sample.</p>
-<hr>
-<h2 id="1.-Choice-of-the-coverslip">1. Choice of the coverslip<a class="anchor-link" href="#1.-Choice-of-the-coverslip">&#182;</a></h2><p>In general, you should always use #1.5 coverslip (0.17mm thickness) as most
-microscope objectives are designed to work optimally with these. This is true
-for fixed samples as well as live samples. For live cell imaging, <a href="http://ibidi.com/applications/live-cell-imaging/">Ibidi</a>
- as a very good choice of dishes and chambers.</p>
-<hr>
-<h2 id="2.-Choice-of-your-fluorophore(s)">2. Choice of your fluorophore(s)<a class="anchor-link" href="#2.-Choice-of-your-fluorophore(s)">&#182;</a></h2><ul>
-<li><p>First, make you have the right laser lines and/or excitation-emission filters available, either in your lab or in the facilities around you.</p>
-</li>
-<li><p>Second, especially if you are working with living sample, try to work with fluorophores with a peak in excitation that is toward the longer wavelengths. Shorter wavelengths, such as UV, have a stronger energy and will damage your sample faster.</p>
-</li>
-<li><p>Third, obviously, you want a bright fluorophore (high quantum yield) with a long lifetime. To choose from the myriad of fluorophore, I will recommend to use the <a href="http://www.fpvis.org/">fluorescent protein visualization</a> tool develop by Talley Lambert and Kurt Thorn.</p>
-</li>
-<li><p>Finally, avoid as much as possible any cross talk between your fluorophores, to check for that, you can use the <a href="https://www.thermofisher.com/us/en/home/life-science/cell-analysis/labeling-chemistry/fluorescence-spectraviewer.html">Fluorescence SpectraViewer</a> from Thermo Fisher Scientific.</p>
-</li>
-</ul>
-<hr>
-<h2 id="3.-Fixation-and-permeabilization">3. Fixation and permeabilization<a class="anchor-link" href="#3.-Fixation-and-permeabilization">&#182;</a></h2><p>Fixing and permeabilizing your cells affects the cell morphology and the availability of the antigen you are trying to detect. You may get different results with different reagents, times and concentrations hence the need for protocol optimization. The distortion of the cell morphology is something to bear in mind when interpreting the images.</p>
-<h3 id="Fixation">Fixation<a class="anchor-link" href="#Fixation">&#182;</a></h3><p><strong>Formaldehyde/paraformaldehyde:</strong><br>
-Aldehyde fixatives cross-link proteins and generally preserve well the cell morphology. They are somewhat slower acting than organic solvents, especially for thick specimens. 4% formaldehyde for 10 min is a good starting point for mammalian cells.</p>
-<p>(<strong>Glutaraldehyde</strong> preserves the cellular structure very well but causes strong autofluorescence and so is used mainly for EM.)</p>
-<p><strong>Methanol</strong><br>
-Organic solvents like methanol precipitate proteins, which produces a similar outcome to crosslinking with aldehydes - the protein "shell" of the cell is maintained, but all the small molecules within will be lost during the rest of the protocol. Fixation with methanol denatures proteins, so never use if you have a fluorescent protein that you want to look at in your sample.
-Some antigenic epitopes are in fact completely destroyed by methanol. However, it might also be advantageous for some other antibodies (especially some monoclonal antibodies which bind only one epitope) that the naturally buried antigens could be exposed after methanol fixation.
-Methanol/Acetone Using a combination of methanol and acetone can improve immunolabelling lost in 100% methanol fixation (methanol is best for structure such as microtubules, acetone permeabilize well and is less damaging). Try few min in solvent at -20°C as a starting point.</p>
-<h3 id="Permeabilization">Permeabilization<a class="anchor-link" href="#Permeabilization">&#182;</a></h3><p>Permeabilization helps get the antibodies into your now-fixed cells. A range of different detergents can be used, including NP-40, Triton X-100, Tween-20 and Saponin. Other solvents (eg ethanol or DMSO) can also be used to remove lipid. The fixation step actually permeabilizes the cells to some degree (ie they remove some of the membranes), so these steps aren't really completely distinct (eg Acetone permeabilizes as well as fixes).</p>
-<p>The extent of permeabilization required depends on what you are trying to look at. For example, cell surface proteins don't require much/any permeabilization, indeed, if you remove all the membrane you will lose your protein. Labeling before permeabilization can also help distinguish extracellular subjects (eg cell surface-bound bacteria) and that within the cells (which only stains after permeabilization).</p>
-<blockquote><p>Your staining will be improved by blocking the non-specific binding of your antibody to your specimen. BSA, milk or serum can be used for this. Don't use serum from the same species as the one in which the primary antibody was raised! &lt;/br&gt;
-If you use a secondary antibody developed from goat, a typical blocking solution is 5% normal goat serum made in PBS (some people also add 0.05% Tween-20 to the solution). NaN3 can be added to 0.05% (w/v) to the solution. Blocking can last from 10 minutes to 30 minutes.</p>
-</blockquote>
-<hr>
-<h2 id="4.-Mounting-and-Recording-medium">4. Mounting and Recording medium<a class="anchor-link" href="#4.-Mounting-and-Recording-medium">&#182;</a></h2><h3 id="Mounting-medium">Mounting medium<a class="anchor-link" href="#Mounting-medium">&#182;</a></h3><p>Mounting medium helps preserve your sample and raises the refractive index to give good performance with oil objectives. Mountants often have scavengers which soak-up free radicals and reduce photobleaching (these sometimes reduce the initial brightness of your samples).</p>
-<p>A glycerol-PBS mixture is suitable for most fixed immunofluorescence and GFP-labeled samples, using from 50-90% glycerol, 1x final PBS, and pH 8-9.
-An antifading additive is highly recommended. Time and the act of observation both accelerate the loss of fluorescence from any sample. This inevitable process can be slowed by adding various reagents, chiefly antioxidants and radical scavengers, to the mounting medium.</p>
-<p>Commercial products are available, such as (in no particular order):</p>
+<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Choosing-the-right-fluorescent-microscope-for-your-application">Choosing the right fluorescent microscope for your application<a class="anchor-link" href="#Choosing-the-right-fluorescent-microscope-for-your-application">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>While designing your experiment for fluorescence microscopy there is few questions you should ask yourself, here are some of them:</p>
 <ul>
-<li>Fluoromount-G (Electron Microscopy Sciences): phosphate buffered glycerol + 10% polyvinyl alcohol + 0.1% sodium azide.</li>
-<li>Aqua/Poly-Mount (Polysciences)</li>
-<li>ProLong, SlowFade, SlowFade Light (Molecular Probes):</li>
-<li>Vectashield (Vector Laboratories)</li>
-<li>Immumount (Shandon)</li>
-</ul>
-<h3 id="Recording-medium">Recording medium<a class="anchor-link" href="#Recording-medium">&#182;</a></h3><p>I will not go too much into details here as it really depend on your cells.</p>
-<ul>
-<li>Avoid imaging with red-phenol as it will add a great amount of background.</li>
-<li>If you are having trouble problems with cell death or damage during fluorescence imaging, several commercial products are available to minimize phototoxicity:  <ul>
-<li><a href="http://evrogen.com/products/medium_DMEM_gfp/medium_DMEM_gfp.shtml">Evrogen</a></li>
-<li><a href="http://www.thermofisher.com/us/en/home/life-science/cell-culture/mammalian-cell-culture/classical-media/fluorobrite-media.html">Thermofisher</a></li>
-<li><a href="http://www.cellgs.com/Shop/Cell-Culture-Systems/LiveLight.html">Cell guidance systems</a></li>
-</ul>
-</li>
+<li>How deep in your sample do you need to image? How thick is your sample? </li>
+<li>Is your sample live or fixed?  If you want to do live experiment, are the microscopes around you equipped with environmental control? </li>
+<li>What are the excitations and emissions wavelengths of your fluorophore? Are the microscopes available able to image these wavelengths? </li>
+<li>How fast is the event you are trying to capture with the microscope?</li>
+<li>How small are the objects you are trying to see? What resolution do you need? </li>
 </ul>
 
-<h3 id="Clearing-methods">Clearing methods<a class="anchor-link" href="#Clearing-methods">&#182;</a></h3><p>For thick, fixed speciemens, you might want to consider using clearing methods which will redure the light scattering and the opaqueness of your sample. You will find a nice table of different methods available in this Nature Methods blog post"<a href="http://blogs.nature.com/methagora/2016/02/methods-and-probes-for-cleared-tissue-an-imperfect-table.html">Methods and probes for cleared tissue: an imperfect table</a>":</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is a general guideline for the different fluorescence microscopes that are commonly available in facilities:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>Microscope</th>
+<th>Sample Thickness</th>
+<th>Living sample</th>
+<th>Speed</th>
+<th>Sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.microscopyu.com/techniques/fluorescence/total-internal-reflection-fluorescence-tirf-microscopy">TIRF</a></td>
+<td>~100nm</td>
+<td>+++</td>
+<td>FAST</td>
+<td>++++</td>
+</tr>
+<tr>
+<td>Widefield</td>
+<td>1-10μm</td>
+<td>+++</td>
+<td>FAST</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="https://micro.magnet.fsu.edu/primer/digitalimaging/deconvolution/deconvolutionhome.html">Widefield with deconvolution</a></td>
+<td>5-20μm</td>
+<td>+++</td>
+<td>FAST</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="http://zeiss-campus.magnet.fsu.edu/articles/spinningdisk/introduction.html">Spinning disk confocal</a></td>
+<td>10-50μm</td>
+<td>+++</td>
+<td>FAST</td>
+<td>+++</td>
+</tr>
+<tr>
+<td><a href="https://www.microscopyu.com/tutorials/laser-scanning-confocal-microscopy">Laser scanning confocal</a></td>
+<td>10-100μm</td>
+<td>+</td>
+<td>SLOW</td>
+<td>+</td>
+</tr>
+<tr>
+<td><a href="https://www.microscopyu.com/techniques/multi-photon/multiphoton-microscopy">Two-photon</a></td>
+<td>&gt;100μm</td>
+<td>++</td>
+<td>SLOW</td>
+<td>++</td>
+</tr>
+<tr>
+<td>Light sheet</td>
+<td>&gt;1mm</td>
+<td>+++</td>
+<td>FAST</td>
+<td>++++</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, this is a general guideline and I though I should add some notes:</p>
+<h3 id="Sample-thickness">Sample thickness<a class="anchor-link" href="#Sample-thickness">&#182;</a></h3><p>This has nothing to do with how deep you can image (except for the light sheet microscope), this depend mainly on the <a href="https://www.microscopyu.com/microscopy-basics/working-distance-and-parfocal-length">working distance</a> of your objective.
+This is mainly dependent on your signal to noise ratio, or if you prefer, the background in your image versus the signal of you fluorophore. For example, you can definitely image up to few hundred micron without the need of a 2-photon if you have a <a href="http://www.leica-microsystems.com/science-lab/clarity/clarifying-tissue-clearing/">"cleared"</a> sample. Or, for example, if you grow single layer of cells on top of a 100μm transparent gel, you could definitely image them with a wide-field microscope. At the opposite, if you have a lot of background a spinning disk confocal will probably not work very well with a 50μm thick sample.</p>
+<h3 id="Speed">Speed<a class="anchor-link" href="#Speed">&#182;</a></h3><p>In this case, LSCM and 2-photon confocal are inherently slower because you image your sample point by point. For the other techniques the speed is dicteted by the camera frame rates. However, in the case you would like to acquire multi-dimenstional images, you should take into consideration the other part of the microscope. For example, if you need to acquire multi-colors images, how fast can the microscope switch between the different colors? For a Z-stack, is there a Z-piezo? Can the software trigger the different part of the microscope? etc.</p>
+<h3 id="Sensitivity">Sensitivity<a class="anchor-link" href="#Sensitivity">&#182;</a></h3><p>This part relate to 2 factors:</p>
+<ol>
+<li>from the photons emitted by your fluorophore, how many reached the detectors. While in a widefield microscope, this is mainly dependent on the <a href="https://www.microscopyu.com/microscopy-basics/numerical-aperture">numerical aperture</a> of your objective, in a confocal a lot of the light is block by the pinhole. </li>
+<li>The quantum efficiency of your detector, or its ability to convert photons into photon-electrons. </li>
+</ol>
 
 </div>
 </div>
