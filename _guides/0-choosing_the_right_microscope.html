@@ -5,7 +5,7 @@ title : Choosing the right microscope for your application
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>choosing_the_right_microscope</title>
+<title>Choosing_the_right_microscope</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11871,13 +11871,17 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Again, this is a general guideline and I though I should add some notes:</p>
-<h3 id="Sample-thickness">Sample thickness<a class="anchor-link" href="#Sample-thickness">&#182;</a></h3><p>This has nothing to do with how deep you can image (except for the light sheet microscope), this depend mainly on the <a href="https://www.microscopyu.com/microscopy-basics/working-distance-and-parfocal-length">working distance</a> of your objective.
-This is mainly dependent on your signal to noise ratio, or if you prefer, the background in your image versus the signal of you fluorophore. For example, you can definitely image up to few hundred micron without the need of a 2-photon if you have a <a href="http://www.leica-microsystems.com/science-lab/clarity/clarifying-tissue-clearing/">"cleared"</a> sample. Or, for example, if you grow single layer of cells on top of a 100μm transparent gel, you could definitely image them with a wide-field microscope. At the opposite, if you have a lot of background a spinning disk confocal will probably not work very well with a 50μm thick sample.</p>
-<h3 id="Speed">Speed<a class="anchor-link" href="#Speed">&#182;</a></h3><p>In this case, LSCM and 2-photon confocal are inherently slower because you image your sample point by point. For the other techniques the speed is dicteted by the camera frame rates. However, in the case you would like to acquire multi-dimenstional images, you should take into consideration the other part of the microscope. For example, if you need to acquire multi-colors images, how fast can the microscope switch between the different colors? For a Z-stack, is there a Z-piezo? Can the software trigger the different part of the microscope? etc.</p>
+<h3 id="Sample-thickness">Sample thickness<a class="anchor-link" href="#Sample-thickness">&#182;</a></h3><p>This has nothing to do with how deep you can image (except for the light sheet microscope), how deep you are able to image depend mainly on the <a href="https://www.microscopyu.com/microscopy-basics/working-distance-and-parfocal-length">working distance</a> of your objective.
+The sample thickness given here is an indication on which technique you should use depending of the thickness of your sample. However, how deep you will be able to image with a specific technique will also be dependent on your signal to noise ratio.
+For example, you can often image up to few hundreds microns without the need of a 2-photon if you have a <a href="http://www.leica-microsystems.com/science-lab/clarity/clarifying-tissue-clearing/">"cleared"</a> sample. Or, if you grow single layer of cells on top of a 100μm transparent gel, you could probably image them with a wide-field microscope. At the opposite, if you have a lot of background vs signal a spinning disk confocal will probably not work very well with a 50μm thick sample.
+In conclusion. if you have the option, you should try different technique to see which one is the appropriate for your sample.</p>
+<h3 id="Speed">Speed<a class="anchor-link" href="#Speed">&#182;</a></h3><p>In this case, LSCM and 2-photon confocal are inherently slower because you image your sample point by point. For the other techniques the speed is dicteted by the camera frame rates. However, in the case you would like to acquire multi-dimenstional images, you should take into consideration the other parts of the microscope. For example, if you need to acquire multi-colors images, how fast can the microscope switch between the different colors? For a Z-stack, is there a Z-piezo? Can the software trigger the different part of the microscope? etc.</p>
 <h3 id="Sensitivity">Sensitivity<a class="anchor-link" href="#Sensitivity">&#182;</a></h3><p>This part relate to 2 factors:</p>
 <ol>
-<li>from the photons emitted by your fluorophore, how many reached the detectors. While in a widefield microscope, this is mainly dependent on the <a href="https://www.microscopyu.com/microscopy-basics/numerical-aperture">numerical aperture</a> of your objective, in a confocal a lot of the light is block by the pinhole. </li>
-<li>The quantum efficiency of your detector, or its ability to convert photons into photon-electrons. </li>
+<li><p>From the photons emitted by your fluorophore, how many reached the detectors. In a widefield microscope, this is mainly dependent on the light-gathering power of your objective  $B \propto \frac{NA^4}{M^2}$ where M is the magnification and NA the numerical aperture. In a confocal microscope, you also have to take into account that a lot of the light is rejected by the pinhole.</p>
+</li>
+<li><p>The quantum efficiency of your detector, or its ability to convert photons into photon-electrons.</p>
+</li>
 </ol>
 
 </div>
