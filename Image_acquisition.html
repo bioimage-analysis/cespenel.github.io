@@ -1,8 +1,3 @@
----
-title : Basic concepts you should know before starting your acquisition
----
-
-
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
@@ -8461,15 +8456,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11219,7 +11214,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11654,7 +11649,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11710,14 +11705,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  }
-  div.output_wrapper {
+  } 
+  div.output_wrapper { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
-  div.output {
+  div.output { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
 }
 </style>
@@ -11756,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+<h3 id="Few-things-you-should-know-before-acquiring-your-images">Few things you should know before acquiring your images<a class="anchor-link" href="#Few-things-you-should-know-before-acquiring-your-images">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11765,143 +11760,23 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Image-acquisition---some-basic-concepts:">Image acquisition - some basic concepts:<a class="anchor-link" href="#Image-acquisition---some-basic-concepts:">&#182;</a></h1><p>Here are few basic concepts you should know before starting your acquisition:</p>
+<p><img src="images/obj.png" alt="Objective"></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Objective-lens">Objective lens<a class="anchor-link" href="#Objective-lens">&#182;</a></h2><p>The objective lens is one of the most important piece of equipment of your microscope, it will determine the size of your <strong>field of view</strong>, your <strong>resolution</strong>, your <strong>sampling</strong> and depending of the quality of your objective, it will help with some <strong>optical correction</strong>.</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here I highlighted the key parameters that you can see on the markings on the barrel of an objective lens:</p>
-<p><img src="/img/guides/obj.png" style="width:350px" /></p>
-<h3 id="Numerical-aperture:">Numerical aperture:<a class="anchor-link" href="#Numerical-aperture:">&#182;</a></h3><p>It is the angular aperture of your objective NA given as:</p>
-<p>${\large NA = n \sin\theta} $</p>
-<p>Where $\theta$ is the half angle of the cone of specimen light accepted by the objective lens and <em>n</em> is the refractive index of the medium between the lens and the specimen.</p>
-<p>The <strong>higher the NA</strong> the more diffracted rays are collected from the specimen and then the <strong>higher the spatial resolution</strong> you could expect.</p>
-<h3 id="Magnification:">Magnification:<a class="anchor-link" href="#Magnification:">&#182;</a></h3><p>An higher magnification will not give you a higher resolution, however, the magnification is critical for <strong>sampling</strong> (see bellow) while working with a camera.
-Moreover, the ratio of numerical aperture to magnification determines the light-gathering power of a lens and hence the <strong>image brightness</strong> B:</p>
-<p>${\large B \propto \frac{NA^4}{M^2}} $ (epi-illumination mode)</p>
-<p>Where M is the magnification and NA the numerical aperture.</p>
-<p>Finally you should keep in mind that an higher magnification will give you a smaller <strong>field of view</strong>.</p>
-<h3 id="Immersion-medium:">Immersion medium:<a class="anchor-link" href="#Immersion-medium:">&#182;</a></h3><p>As we have seen before, in the equation $NA = n \sin\theta$ the NA is directly proportional to <em>n</em> then, the higher the refractive index of the immersion medium, the higher the resolution you could have. However, you should also take into account the <em>n</em> of your specimen and try to match it as much as possible with the <em>n</em> of the objective lens to avoid too much diffraction of the light. For example, if you use ProLong® Gold Antifade Mountant which as a refractive index of 1.47, an oil ($n=1.52$) objective will be great or, if you have the option, a glycerol ($n=1.47$) objective would be perfect.</p>
-<h3 id="Optical-correction:">Optical correction:<a class="anchor-link" href="#Optical-correction:">&#182;</a></h3><p>This is more or less an indication of the quality (and the price) of your objective. It is indicative of the amount of colors that are corrected for spherical and chromatic aberration as well as if the objective provide flat-field correction, here is table that summarize the different optical correction available:</p>
-<table>
-<thead><tr>
-<th>Objective Type</th>
-<th>Spherical Aberration</th>
-<th>Chromatic Aberration</th>
-<th>Field Curvature</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Achromat</td>
-<td>1 Color</td>
-<td>2 Colors</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Plan Achromat</td>
-<td>1 Color</td>
-<td>2 Colors</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Fluorite</td>
-<td>2-3 Colors</td>
-<td>2-3 Colors</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Plan Fluorite</td>
-<td>3-4 Colors</td>
-<td>2-4 Colors</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Plan Apochromat</td>
-<td>3-4 Colors</td>
-<td>4-5 Colors</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<blockquote><h4 id="Even-the-best-objective-will-not-give-you-a-good-image-if-it-is-dirty,-YOU-SHOULD-ALWAYS-START-YOUR-EXPERIMENT-BY-CLEANING-YOUR-OBJECTIVE-as-well-as-the-support-of-your-specimen.">Even the best objective will not give you a good image if it is dirty, YOU SHOULD ALWAYS START YOUR EXPERIMENT BY CLEANING YOUR OBJECTIVE as well as the support of your specimen.<a class="anchor-link" href="#Even-the-best-objective-will-not-give-you-a-good-image-if-it-is-dirty,-YOU-SHOULD-ALWAYS-START-YOUR-EXPERIMENT-BY-CLEANING-YOUR-OBJECTIVE-as-well-as-the-support-of-your-specimen.">&#182;</a></h4>
-</blockquote>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Spatial-resolution-and-sampling">Spatial resolution and sampling<a class="anchor-link" href="#Spatial-resolution-and-sampling">&#182;</a></h2><h3 id="Spatial-resolution">Spatial resolution<a class="anchor-link" href="#Spatial-resolution">&#182;</a></h3><p>The <em>spatial resolution</em> of the microscope is defined by the smallest resolvable distance between two points in an image.</p>
-<h4 id="XY-resolution"><em>XY</em> resolution<a class="anchor-link" href="#XY-resolution">&#182;</a></h4><p>$ {\large d_{x,y} =  \frac{0.61\lambda}{NA}}$
-Which define the <em>Rayleigh criterion</em> where <em>d</em> is the minimum resolved distance (in other words, your <em>XY</em> resolution), and NA is the numerical aperture of the objective lens. It's also the radius of the central diffraction disk also known at the <strong><em>Airy disk</em></strong> (see figure bellow).</p>
-<p><img src="/img/guides/Airy.png" style="width:350px"/></p>
-<blockquote><p>On a confocal microscope it's possible to increase the axial and lateral resolution of a microscope:
-$ dconf_{x,y} =  \frac{0.41\lambda}{NA}$,
-$ dconf_{z} =  \frac{1.67\lambda n}{NA^2}$
-However, this is possible by closing the pinhole bellow the size of the Airy unit inducing a important lost in emitted light.</p>
-</blockquote>
-<h4 id="Z-resolution"><em>Z</em> resolution<a class="anchor-link" href="#Z-resolution">&#182;</a></h4><p>$ {\large d_{z} =  \frac{2\lambda n}{NA^2}}$
-Where n is refractive index of the immersion medium.</p>
-<h3 id="Sampling">Sampling<a class="anchor-link" href="#Sampling">&#182;</a></h3><p>Sampling is the process of converting the continuous analog signals out of the objective into a numeric digital sequence. According to the <strong>Nyquist sampling theorem</strong>, in order to preserve the spatial resolution, the radius of the <em>Airy disk</em> ($d$) should be covered by a minimum of 2 adjacent pixels.<br></p>
-<p>Concretely, what does that mean? Let's assume that you are working with an objective with $M = 60X$, $NA = 1.4$ and with a $\lambda = 500nm$ the <em>resolvable power</em> of you objective is:<br>
-$d_{x,y}= \frac{0.61x500}{1.4}\approx 218nm$ <br>
-If you are working with a sCMOS camera, which typically have a $ 6.5 \mu m$ physical pixel size, after magnification, your pixel size is:<br>
-$pixel_{xy}= \frac{6.5}{60}\approx 108nm$, which will then give you a good sampling as illustrated is figure bellow:</p>
-<p><img src="/img/guides/sampling.png" style="width:350px"/></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dynamic-Range">Dynamic Range<a class="anchor-link" href="#Dynamic-Range">&#182;</a></h2><p>The number of resolvable steps of light intensity, gray-level steps ranging from black to white, is called the dynamic range.</p>
-<p>Ideally, especially if you plan in doing any image quantitation/measurements, <strong>the larger the number of gray levels the more accurate your measurement would be</strong> and also the easier the extraction of information will be.</p>
-<blockquote><p>Most of the computer monitors have only 8 bit processing, so you won't be able to see the difference between an 8 bit or a 16 bit image on your screen.</p>
-</blockquote>
-<h3 id="Bit-depth">Bit depth<a class="anchor-link" href="#Bit-depth">&#182;</a></h3><p>After digitization (by an analogue to digital converter(ADC)) in the computer, the photon signal is displayed as shades of gray ranging from black (no signal) to white (saturating signal) on the monitor. The ADC are described in terms of their bit depth. Since a computer bit can only be in one of two possible stated (0 or 1), the bit depth is described as $2^X$ number of steps. Therefore, an 8 bit processor can encode $2^8$ steps or 256 gray levels and a 16 bit processor can encode $2^16$ steps or 65536 gray levels.</p>
-<blockquote><p>The higher the bit depth, the larger your image would be, an "8 bit pixel", will take 1 byte (1 byte is 8 binary digits) on the disk while a "16 bit pixel" will take 2 bytes.</p>
-</blockquote>
-<h3 id="Laser-power">Laser power<a class="anchor-link" href="#Laser-power">&#182;</a></h3><p>Here the advice is relatively simple: <strong>"Use the lowest laser power to give an acceptable image"</strong>. This is true especially if you are working with live cells, too much laser power will be phototoxic to your cells and will alter their behavior. Moreover, using low laser power will prevent photobleaching of your fluorophores.<br>
-<strong>What is an acceptable image?</strong> It's an image you can use for quantification. One advice would be to test your images on your analysis pipeline to make sure the signal to noise is good enough to minimize as much as possible any post-processing.</p>
-<h3 id="Gain">Gain<a class="anchor-link" href="#Gain">&#182;</a></h3><p>Gain is a relative measure of the amplification one applies to the photon detection system. On a PMT (confocal) the signal voltage is amplified by multiplication by a constant factor, while on a camera, increasing the electronic gain reduces the number of photoelectrons that are assigned per gray level.
-Increasing the gain will then result in brighter images, however, <strong>Gain does not make your camera more sensitive</strong>. It boosts the noise as well as the signal and at some point as the gain is increased (and the overall image gets brighter), the signal/noise ratio (S/N) starts to decrease. The overall aim is to get the highest S/N, NOT the brightest image.</p>
-<h3 id="Offset">Offset<a class="anchor-link" href="#Offset">&#182;</a></h3><p>Offset is an electron adjustment that shift positively or negatively the signal. The offset has to be adjusted to prevent the ADC to hit 0.</p>
-<blockquote><p>Caution: by decreasing the offset too far, very faint data will actually be lost - it is critical that this is not allowed to happen. New users are often tempted to decrease the offset value to try to eliminate background or non-specific signal. This should <strong>NEVER</strong> be done.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
-</div>
-</div>
 </div>
     </div>
   </div>
